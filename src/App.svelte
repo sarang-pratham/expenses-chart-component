@@ -1,45 +1,34 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import Counter from './lib/Counter.svelte'
+  import Logo from './assets/logo.svg'
+  // import Counter from './lib/Counter.svelte'
 </script>
 
 <main>
-  <div>
-    <a href="https://vitejs.dev" target="_blank"> 
-      <img src="/vite.svg" class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank"> 
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1>
-
-  <div class="card">
-    <Counter />
+  <div class="sec1">
+    <div class="balance">
+      <p>My balance</p>
+      <p>$921.48</p>
+    </div>
+    <img src={Logo} alt="logo" id="logo">
   </div>
 
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
+  <div class="sec2">
+    <h3>Spending - Last 7 days</h3>
+    <div id="bar-chart"></div>
+    <hr>
+    <div class="total">
+      <div class="total-1">
+        <small>Total this month</small>
+        <p>$478.33</p>
+      </div>
+      <div class="total-2">
+        <p>+2.4%</p>
+        <small>from last month</small>
+      </div>
+    </div>
+  </div>
 </main>
 
 <style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
-  }
+  
 </style>
